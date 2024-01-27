@@ -8,9 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     
-  
+    @IBOutlet weak var changeBackgroundColorTapped: UIButton!
     @IBOutlet weak var morePetsSwitch: UISwitch!
     @IBOutlet weak var morePetsStepper: UIStepper!
     @IBOutlet weak var firstNameTextField: UITextField!
@@ -48,10 +47,18 @@ class ViewController: UIViewController {
 
         present(alertController, animated: true, completion: nil)
     }
-
     
-
-
+    @IBAction func changeBackgroundColorTapped(_ sender: UIButton) {
+        // Change the background color to a random color every time the button is tapped.
+        UIView.animate(withDuration: 0.5) { [weak self] in
+                self?.view.backgroundColor = UIColor(
+                    red: CGFloat.random(in: 0...1),
+                    green: CGFloat.random(in: 0...1),
+                    blue: CGFloat.random(in: 0...1),
+                    alpha: 1.0
+                )
+            }
+        }
 
 }
 
