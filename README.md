@@ -23,7 +23,9 @@ This iOS application, built with Swift and UIKit, offers a user-friendly platfor
 ### Optional Features
 
 - [x] 1. User can tap a button to change the color of the background view
-- [x] 4. Any stylistic changes that are not default options
+- [x] 2. Any stylistic changes that are not default options
+    - Button corners
+    - Filling colors
+    - Fonts
 
-Markup : - Butten corners, filling colors
       
