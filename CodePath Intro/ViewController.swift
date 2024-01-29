@@ -9,25 +9,49 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var changeBackgroundColorTapped: UIButton!
+
+  
+    @IBOutlet weak var changeBGButton: UIButton!
+    @IBOutlet weak var introduceButton: UIButton!
     @IBOutlet weak var morePetsSwitch: UISwitch!
     @IBOutlet weak var morePetsStepper: UIStepper!
     @IBOutlet weak var firstNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var schoolNameTextField: UITextField!
     @IBOutlet weak var yearSegmentedControl: UISegmentedControl!
-    
     @IBOutlet weak var numberOfPetsLabel: UILabel!
+    
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+           super.viewDidLoad()
+            styleButton(introduceButton)
+            styleButton(changeBGButton)
+       }
+
+    
+    func styleButton(_ button: UIButton) {
+        button.setTitleColor(UIColor.white, for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .bold)
+
+        button.layer.cornerRadius = button.frame.height / 2
+        button.clipsToBounds = true
+
+        button.layer.borderWidth = 2
+        button.layer.borderColor = UIColor.white.cgColor
+        button.layer.shadowColor = UIColor.black.cgColor
+        button.layer.shadowOffset = CGSize(width: 0, height: 2)
+        button.layer.shadowRadius = 4
+        button.layer.shadowOpacity = 0.25
     }
+    
+    
     @IBAction func stepperDidChange(_ sender: UIStepper) {
         numberOfPetsLabel.text = "\(Int(sender.value))"
     }
     
-    @IBAction func introduceSelfDidTapped(_ sender: UIButton) {
 
+    @IBAction func introduceSelfDidTapped(_ sender: UIButton) {
+ 
         // Let's us choose the title we have selected from the segmented control
         let year = yearSegmentedControl.titleForSegment(at: yearSegmentedControl.selectedSegmentIndex)
 
@@ -47,18 +71,19 @@ class ViewController: UIViewController {
 
         present(alertController, animated: true, completion: nil)
     }
-    
-    @IBAction func changeBackgroundColorTapped(_ sender: UIButton) {
-        // Change the background color to a random color every time the button is tapped.
-        UIView.animate(withDuration: 0.5) { [weak self] in
-                self?.view.backgroundColor = UIColor(
-                    red: CGFloat.random(in: 0...1),
-                    green: CGFloat.random(in: 0...1),
-                    blue: CGFloat.random(in: 0...1),
-                    alpha: 1.0
-                )
-            }
-        }
+  
 
+    @IBAction func changeBGTapped(_ sender: Any) {
+        // Change the background color to a random color every time the button is tapped.
+                UIView.animate(withDuration: 0.5) { [weak self] in
+                        self?.view.backgroundColor = UIColor(
+                            red: CGFloat.random(in: 0...1),
+                            green: CGFloat.random(in: 0...1),
+                            blue: CGFloat.random(in: 0...1),
+                            alpha: 1.0
+                        )
+                    }
+                }
+    
 }
 
