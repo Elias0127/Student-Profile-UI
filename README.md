@@ -9,6 +9,8 @@ This iOS application, built with Swift and UIKit, offers a user-friendly platfor
 `TODO://` Add the URL to your animated app walk-though `gif` in the image tag below. Make sure the gif actually renders and animates when viewing this README. (☝️ Remove this paragraph after after adding gif). LICEcap is a great tool for recording and you can simply upload the gif to GitHub and provide the path name in place of URL as shown below.
 
 <img src="https://github.com/Elias0127/codepath-prework/assets/86494198/de561dae-3b41-47aa-b57a-27df02e70c6a" width=200>
+
+
 <img src="https://github.com/Elias0127/codepath-prework/assets/86494198/35dd856a-01e1-4fcd-88ba-5e6370901657" width=200>
 
 ### Required Features
@@ -24,5 +26,5 @@ This iOS application, built with Swift and UIKit, offers a user-friendly platfor
 
 - [x] 1. User can tap a button to change the color of the background view
 - [x] 4. Any stylistic changes that are not default options
-      * Butten corners, filling colors
+Markup : - Butten corners, filling colors
       
