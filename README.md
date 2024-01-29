@@ -6,10 +6,10 @@ This iOS application, built with Swift and UIKit, offers a user-friendly platfor
 
 ### App Walk-though
 
-<img src="https://github.com/Elias0127/codepath-prework/assets/86494198/de561dae-3b41-47aa-b57a-27df02e70c6a" width=200>
-
-
-<img src="https://github.com/Elias0127/codepath-prework/assets/86494198/35dd856a-01e1-4fcd-88ba-5e6370901657" width=200>
+<p align="center">
+  <img src="https://github.com/Elias0127/codepath-prework/assets/86494198/de561dae-3b41-47aa-b57a-27df02e70c6a" width="200" style="margin-right: 20px;"/>
+  <img src="https://github.com/Elias0127/codepath-prework/assets/86494198/35dd856a-01e1-4fcd-88ba-5e6370901657" width="200"/>
+</p>
 
 ### Required Features
 
